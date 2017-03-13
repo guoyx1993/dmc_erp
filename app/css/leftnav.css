@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 100%;
+  font-family: "Microsoft Yahei";
+  color: #555;
+}
+.left-nav{
+  padding-bottom: 20px;
+}
+.left-nav h3 {
+  padding: 10px 0 10px 4%;
+  border-bottom: 2px solid #1a3642;
+  color: #019875;
+  font-size: 1.125rem;
+  border-left: 4px solid #019875;
+}
+.left-nav li {
+  list-style: none;
+  border-bottom: 1px solid #1a3642;
+}
+.left-nav .title {
+  padding: 8px 0;
+  padding-left: 14px;
+  font-size: 1rem;
+  color: #fff;
+}
+.left-nav li a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 10px 8px 20px;
+  color: #019875;
+  font-size: 0.875rem;
+}
+.left-nav .on a,
+.left-nav li a:hover {
+  background-color: #1a343e;
+}
