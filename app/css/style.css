@@ -129,13 +129,40 @@ body {
   float: left;
 }
 .right-container {
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
 }
 .search {
   height: 30px;
   line-height: 30px;
-  margin-top: 10px;
+  margin: 10px 0 15px 5%;
+  clear: both;
+}
+.search div {
+  display: inline-block;
+}
+.search .btn {
+  float: right;
+  margin-right: 4%;
+}
+.search button {
+  padding: 6px 10px;
+  font-size: 0.875rem;
+  color: #fff;
+  margin: 0 5px;
+  background-color: #019875;
+  display: inline-block;
+  border: 1px solid #fff;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+.search button:active {
+  background-color: #fff;
+  color: #019875;
 }
 .search input {
   font-size: 1rem;
@@ -190,6 +217,15 @@ body {
 .tab1 {
   display: table;
 }
+.table {
+  width: 100%;
+}
+.table thead tr {
+  background-color: #eee;
+}
+.table tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
 .table a {
   color: #019875;
   padding: 3px 2px;
@@ -197,8 +233,10 @@ body {
 .table,
 .table th,
 .table td {
-  border: 1px solid #019875;
-  padding: 5px 0;
+  border: 1px solid #eee;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
 }
 .page {
   margin-top: 20px;
@@ -232,11 +270,16 @@ body {
   background-color: #fff;
   color: #019875;
 }
-.page input {
-  width: 30px;
+.page input,
+.page select {
   font-size: 1rem;
   padding: 2px 0;
   text-align: center;
+  border: none;
+  border: 1px solid #019875;
+}
+.page input {
+  width: 30px;
 }
 /*一级轮番导航*/
 .swiper-container {
@@ -278,5 +321,172 @@ body {
 .navList li a:hover,
 .navList .on a {
   border-color: #019875;
+  background-color: #fff;
+}
+.w40 {
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+}
+.form label {
+  font-size: 0.875rem;
+  margin-right: 4px;
+}
+.form input {
+  width: 75%;
+  font-size: 1rem;
+  padding: 5px 2%;
+  background-color: #fff;
+  border: none;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.form div {
+  margin-bottom: 10px;
+}
+.form .btnbox {
+  text-align: center;
+}
+.form button {
+  text-decoration: none;
+  padding: 6px 10px;
+  font-size: 0.875rem;
+  color: #fff;
+  background-color: #019875;
+  display: inline-block;
+  border: 1px solid #fff;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+.form button:active {
+  background-color: #fff;
+  color: #019875;
+}
+.textbox {
+  overflow: hidden;
+  padding: 0 5%;
+  margin: 10px 0;
+  color: #666;
+}
+.textbox .text {
+  width: 50%;
+  float: left;
+  margin-left: 10%;
+}
+.textbox h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.textbox p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin: 8px 0 8px 0;
+}
+.textbox .img {
+  width: 22%;
+  margin-right: 8%;
+  float: right;
+}
+.textbox .img p {
+  text-align: center;
+}
+.textbox img {
+  width: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.r-box {
+  margin: 20px 5% 15px 5%;
+  text-align: center;
+}
+.r-box .img {
+  width: 50%;
+  float: left;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.r-box img {
+  width: 100%;
+  max-width: 250px;
+}
+.r-box .w30 {
+  width: 30%;
+  max-width: 150px;
+  margin-right: 10%;
+}
+.right-container button {
+  text-decoration: none;
+  padding: 6px 10px;
+  font-size: 0.875rem;
+  color: #fff;
+  background-color: #019875;
+  display: inline-block;
+  border: 1px solid #fff;
+  outline: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+.right-container button:active {
+  background-color: #fff;
+  color: #019875;
+}
+.border-text {
+  clear: both;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: 1px solid #eee;
+  padding: 10px 0 10px 20px;
+  text-align: left;
+}
+.border-text p {
+  line-height: 1.2rem;
+  margin: 8px 0;
+}
+.btnbox {
+  text-align: center;
+}
+.form {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+.form input {
+  max-width: 300px;
+  text-align: left;
+}
+.w40 {
+  width: 40%;
+  margin-left: 5%;
+}
+.tab .btn {
+  overflow: hidden;
+}
+.tab .btn a {
+  display: inline-block;
+  float: left;
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+  border-right: 1px solid #fff;
+  color: #fff;
+  background-color: #019875;
+}
+.tab .btn:hover,
+.tab .btn:active {
+  color: #019875;
   background-color: #fff;
 }

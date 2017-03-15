@@ -1,6 +1,6 @@
 $(document).ready(function(){
     (function(){
-        
+        console.log($(".r-top-text"));
         //入口函数
         main();
         function main(){

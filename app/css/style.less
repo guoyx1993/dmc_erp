@@ -7,6 +7,14 @@ body{
 	font-family: "Microsoft Yahei";
 	color: #555;
 }
+.bodr(@w){
+	-webkit-border-radius: @w;
+    -moz-border-radius: @w;
+    -ms-border-radius: @w;
+    -o-border-radius: @w;
+	border-radius:@w;
+}
+@color:#019875;
 .rooter{
 	max-width: 960px;
 	margin: 0 auto;
@@ -126,13 +134,36 @@ body{
 	float: left;
 }
 .right-container{
-	width: 90%;
+	width: 100%;
 	margin: 20px auto;
 }
 .search{
 	height: 30px;
 	line-height: 30px;
-	margin-top: 10px;
+	margin: 10px 0 15px 5%;
+	clear: both;
+	div{
+       display: inline-block;
+	}
+	.btn{
+		float: right;
+		margin-right: 4%;
+	}
+	button{
+	    padding: 6px 10px;
+	    font-size: 0.875rem;
+	    color: #fff;
+	    margin: 0 5px;
+	    background-color:#019875;
+	    display: inline-block;
+	    border: 1px solid #fff;
+	    outline: none;
+        .bodr(6px);	
+        &:active{
+            background-color:#fff;
+            color: #019875;
+        };	
+	}
 }
 .search input{
 	font-size: 1rem;
@@ -185,13 +216,24 @@ body{
 .tab1{
 	display: table;
 }
+.table{
+	width: 100%;
+	thead tr{
+		background-color: #eee;
+	}
+	tbody tr:nth-child(2n){
+		background-color: #eee;
+	}
+}
 .table a{
 	color: #019875;
 	padding: 3px 2px;
 }
 .table,.table th,.table td{
-	border:1px solid #019875;
-	padding: 5px 0;
+	border:1px solid #eee;
+	border:none;
+	border-bottom: 1px solid #eee;
+	padding: 8px 0;
 }
 .page{
 	margin-top:20px;
@@ -222,11 +264,15 @@ body{
 	background-color: #fff;
 	color: #019875;
 }
-.page input{
-	width: 30px;
+.page input,.page select{
 	font-size: 1rem;
     padding: 2px 0;
 	text-align: center;
+	border:none;
+	border:1px solid #019875;
+}
+.page input{
+	width: 30px;
 }
 /*一级轮番导航*/
 .swiper-container{
@@ -268,4 +314,156 @@ body{
 .navList li a:hover,.navList .on a{
 	border-color: #019875;
 	background-color: #fff;
+}
+.w40{
+	width: 40%;
+	float: left;
+	margin-left: 5%;
+}
+.form{
+    label{
+    	font-size: 0.875rem;
+    	margin-right: 4px;
+    }
+    input{
+    	width: 75%;
+    	font-size: 1rem;
+    	padding: 5px 2%;
+    	background-color: #fff;
+    	border:none;
+    	border:1px solid #ddd;
+	    .bodr(5px);    		
+    }
+    div{
+    	margin-bottom: 10px;
+    }
+    .btnbox{
+    	text-align: center;
+    }
+    button{
+        text-decoration: none;
+	    padding: 6px 10px;
+	    font-size: 0.875rem;
+	    color: #fff;
+	    background-color:#019875;
+	    display: inline-block;
+	    border: 1px solid #fff;
+	    outline: none;
+        .bodr(6px);
+        &:active{
+        	background-color:#fff;
+        	color: #019875;
+        }
+    }
+}
+.textbox{
+	overflow: hidden;
+	padding:0 5%;
+	margin: 10px 0;
+	color: #666;
+	.text{
+		width: 50%;
+		float: left;
+		margin-left: 10%;
+	}
+	h3{
+		padding-bottom: 10px;
+		border-bottom: 1px solid #eee;
+	}
+	p{
+		font-size: 1rem;
+		line-height: 1.2rem;
+		margin:8px 0 8px 0;
+	}
+	.img{
+		width: 22%;
+		margin-right:8%;
+		float: right;
+		p{
+			text-align: center;
+		}
+	}
+	img{
+		width: 100%;
+		.bodr(50%);
+	}
+}
+.r-box{
+	margin: 20px 5% 15px 5%;
+	text-align: center;
+	.img{
+		width: 50%;
+		float: left;
+		margin-bottom: 15px;
+		overflow: hidden;
+	}
+	img{
+		width: 100%;
+		max-width: 250px;
+	}
+	.w30{
+		width: 30%;
+		max-width: 150px;
+		margin-right: 10%;
+	}
+}
+.right-container button{
+    text-decoration: none;
+    padding: 6px 10px;
+    font-size: 0.875rem;
+    color: #fff;
+    background-color:#019875;
+    display: inline-block;
+    border: 1px solid #fff;
+    outline: none;
+    .bodr(6px);
+    &:active{
+    	background-color:#fff;
+    	color: #019875;
+    }
+}
+.border-text{
+	clear:both;
+	width: 70%;
+	margin:0 auto;
+	margin-top: 15px;
+	border:1px solid #eee;
+	padding:10px 0 10px 20px;
+	text-align: left;
+	p{
+		line-height: 1.2rem;
+		margin:8px 0;
+	}
+}
+.btnbox{
+	text-align: center;
+}
+.form{
+	width: 90%;
+	margin:10px auto;
+	text-align: center;
+	input{
+		max-width: 300px;
+		text-align: left;
+	}
+}
+.w40{
+	width: 40%;
+	margin-left: 5%;
+}
+.tab .btn{
+	overflow: hidden;
+    a{
+		display: inline-block;
+		float:left;
+		padding: 6px 6px 6px 6px;
+		text-decoration: none;
+		border-right: 1px solid #fff;
+		color:#fff;
+		background-color: @color;
+	}
+	&:hover,&:active{
+		color: @color;
+		background-color: #fff;
+	};	
 }

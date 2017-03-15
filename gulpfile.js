@@ -18,6 +18,6 @@ var gulp = require('gulp'),
 
     gulp.task('watch',['less','browserSync'],function(){
     	gulp.watch('app/css/*.css',['less']);
-    	gulp.watch('app/js/*.js',browserSync.reload);
-    	gulp.watch('app/*.html',browserSync.reload);
+    	gulp.watch('app/js/**/*.js',browserSync.reload);
+    	gulp.watch('app/**/*.html',browserSync.reload);
     })

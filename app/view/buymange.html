@@ -1,36 +1,41 @@
 		    <div class="right-container">
+		        <div class="t-top">
+			        <div class="r-top-text">
+			        	<span>交易状态:<i>销售</i></span>
+			        	<span>仓库:<i>00</i></span>
+			        	<span>会员编码:<i>1111</i></span>
+			        	<span>挂单数:<i>0</i></span>
+			        </div>
+			        <div class="r-top-text">
+			        	<span>网络状态:<i>联网</i></span>
+			        	<span>收银台:<i>01</i></span>
+			        	<span>售货员:<i>99999</i></span>
+			        	<span>流水号:<i>1430</i></span>
+			        </div>
+			        <div class="r-btn">
+			            <button class="addvip">+添加会员</button>
+			            <span class="today">2017-03-01</span>
+			        </div>
+		        </div>
 			    <div class="search">
 		            <input type="search" name="search"><a class="but-search">搜索</a>
 			    </div>
 			    <div class="tab" id="tab">
-			        <div class="tab-btn">
-			        	<div class="on">自采供应商</div>
-			        	<div>平台供应商</div>
-			        	<div>平台其它供应商</div>
-			        </div>
 			        <div class="tablebox">
 				        <table class="tab1 table">
 				        	<thead>
 				        	    <tr>
-				        	    	<th>供应商名称</th>
-				        	    	<th>地址</th>
-				        	    	<th>联系人</th>
-				        	    	<th>电话</th>
-				        	    	<th>操作</th>
+				        	    	<th>商品名</th>
+				        	    	<th>条码</th>
+				        	    	<th>原价</th>
+				        	    	<th>现价</th>
+				        	    	<th>数量</th>
+				        	    	<th>小计</th>
 				        	    </tr>
 				        	</thead>
 				        	<tbody>
 		                        <tr>
-		                        	<td>某某供应商</td>
-		                        	<td>某某某</td>
-		                        	<td>某某某</td>
-		                        	<td>12345678977</td>
-		                        	<td>
-		                        	    <a href="">明细</a>
-		                        	    <a href="">禁用</a>
-		                        	</td>
-		                        </tr>
-		                        <tr>
+		                        	<td></td>
 		                        	<td></td>
 		                        	<td></td>
 		                        	<td></td>
@@ -40,15 +45,20 @@
 				        	</tbody>
 				        </table>
 			        </div>
+			        <div class="help">
+			        	<span>编辑数量:Ctrl+回车</span>
+			        	<span>增加数量:+</span>
+			        	<span>减少数量:-</span>
+			        	<span>上一个:↑</span>
+			        	<span>下一个:↓</span>
+			        	<span>删除:Delete</span>
+			        	<span>收款:空格</span>
+			        </div>
 			    </div>
-			    <div class="page">
-	                <a href="">首页</a>
-	                <a href="">上一页</a>
-	                <a href="" class="none">1/N</a>
-	                <a href="">下一页</a>
-	                <a href="">尾页</a>
-	                <input type="text" name="number">
-	                <a href="">GO</a>
-	                <a href="" class="none">共23条</a>
-			    </div>
+                <div class="r-bm-form">
+                	<form action="">
+                	    <input type="text" name="code" id="code">
+                	    <input type="text" name="phone" id="phone">
+                	</form>
+                </div>
 		    </div>
