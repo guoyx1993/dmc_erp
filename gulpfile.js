@@ -3,9 +3,12 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync');
 
     gulp.task('less',function(){
-    	return gulp.src('app/css/style.css')
+    	return gulp.src('app/css/style.less')
     	           .pipe(less())
     	           .pipe(gulp.dest('app/css'))
+                   .pipe(browserSync.reload({
+                        stream:true
+                   }))
     })
 
     gulp.task('browserSync',function(){
@@ -17,7 +20,7 @@ var gulp = require('gulp'),
     })
 
     gulp.task('watch',['less','browserSync'],function(){
-    	gulp.watch('app/css/*.css',['less']);
+    	gulp.watch('app/css/*.less',['less']);
     	gulp.watch('app/js/**/*.js',browserSync.reload);
     	gulp.watch('app/**/*.html',browserSync.reload);
     })
