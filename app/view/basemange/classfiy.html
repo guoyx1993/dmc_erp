@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基本信息二级导航</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="/css/jquery.lightTreeview.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript' src='/js/jquery-1.9.1.min.js'></script>
+    <script type='text/javascript' src='/js/leftnav.js'></script>
+    <script type="text/javascript" src="/js/jquery.lightTreeview.pack.js"></script>
+    <style>
+        .lightTreeview li{
+            font-size: 1rem;
+        }
+        .tree{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="right-container">
+        <div class="btn border-b">
+            <a href="">平台类别</a>
+            <a href="">自建类别</a>
+        </div>
+        <div class="tree w40">
+            <p>商品类型</p>
+            <ul id="demo2" class="lightTreeview">
+                <li>家居日化</li>
+                <li>
+                    <div>酒类饮品</div>
+                    <ol style="display:none">
+                        <li>
+                            <div>进口酒</div>
+                            <ul style='display: none;'>
+                                <li>红酒</li>
+                                <li>下啤酒</li>
+                                <li>白酒</li>
+                                <li>葡萄酒</li>
+                            </ul>
+                        </li>
+                        <li>酒类</li>
+                        <li>饮品</li>
+                    </ol>
+                </li>
+                <li>
+                    <div>家具百货</div>
+                    <ul>
+                        <li>文具用品</li>
+                        <li>体育娱乐</li>
+                        <li>男女服饰/li>
+                    </ul>
+                </li>
+                <li>数码家电</li>
+            </ul>
+            <div class="btnbox mtop10"><button>同步平台类别</button></div>
+        </div>
+        <div class="form w50">
+            <p>添加类型</p>
+            <form action="">
+                <div>
+                    <label for="">上级类型:</label><input class="input-w45" type="text">
+                </div>
+                <div>
+                    <label for="">类型名称:</label><input class="input-w45" type="text">
+                </div>
+                <div>
+                    <label for="">负责人:</label><input class="input-w45" type="text"><button>选择</button>
+                </div>
+                <div>
+                    <label for="add" class="label-w90">申请加入平台</label><input type="checkbox" name="add" id="add">
+                    <label for="add">平台展示</label><input type="checkbox" name="add" id="add">
+                </div>
+                <div class="btnbox"><button>保存</button></div>
+            </form>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(function() {
+        $('#demo1').lightTreeview();
+        $('#demo2').lightTreeview({
+            collapse: true,
+            line: true,
+            nodeEvent: false,
+            unique: true,
+            style: 'black',
+            animate: 300
+        });
+       
+    });
+</script>
+</body>
+</html>
