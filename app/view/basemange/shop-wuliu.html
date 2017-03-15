@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息二级导航</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type='text/javascript' src='/js/jquery-1.9.1.min.js'></script>
+    <script type='text/javascript' src='/js/leftnav.js'></script>
+</head>
+<body>
+    <div class="right-container">
+        <div class="search">
+            <div>
+                <input type="search" name="search"><a class="but-search">搜索</a>
+            </div>
+        </div>
+        <div class="tab" id="tab">
+            <div class="tablebox">
+                <div class="btn">
+                    <a href="">小区配送</a>
+                    <a href="">物流配送</a>
+                </div>
+                <table class="tab1 table">
+                    <thead>
+                        <tr>
+                            <th>配送小区</th>
+                            <th>起始金额(元)</th>
+                            <th>免费配送(元)</th>
+                            <th>配送费(元)</th>
+                            <th>操作</th>
+       
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>陕西 延安市 宝塔区 河庄坪 卷烟厂后小区</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <button>删除</button>
+                            </td>
+      
+                        </tr>
+                        <tr>             
+                            <td>陕西 延安市 宝塔区 河庄坪 卷烟厂后小区</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <button>删除</button>
+                            </td>
+      
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="page">
+            <a href="">上一页</a>
+            <a href="" class="none">1/N</a>
+            <a href="">下一页</a>
+            <input type="text" name="number">
+            <a href="">GO</a>
+            <a href="" class="none">共23条</a>
+            <a href="" class="none">每页显示</a>
+            <select id="pagenum">
+                <option value="10">10条</option>
+                <option value="20">20条</option>
+                <option value="50">50条</option>
+                <option value="100">100条</option>
+            </select>
+        </div>       
+        <div class="form">
+            <h3>操作提示:</h3>
+            <p>您可对已有的地址进行删除，亦可新增配送区域</p>
+            <form action="">
+                <div>
+                    <label for="">配送选择:</label>
+                    <select name="province" id="province">
+                        <option value="">陕西省</option>
+                        <option value="">江西省</option>
+                    </select>
+                    <select name="city" id="city">
+                        <option value="">全部</option>
+                        <option value="">某市</option>
+                    </select>
+                    <select name="county" id="conunty">
+                        <option value="">全部</option>
+                        <option value="">某县</option>
+                    </select>
+                    <select name="town" id="town">
+                        <option value="">全部</option>
+                        <option value="">镇/option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">配送起始金额:</label><input type="text">
+                    <span>注：订单金额达到某标准后超市配送</span>
+                </div>
+                <div>
+                    <label for="">免费配送标准:</label><input type="text">
+                    <span>注：超市免费配送标准</span>
+                </div>
+                <div>
+                    <label for="">配送时间:</label><input type="text">
+                    <span>注：超市配送时间，精确到分</span>
+                </div>
+                <div>
+                    <label for="">配送费:</label><input type="text">
+                </div>
+            </form>
+        </div>
+        <div class="btnbox"><button>新增配送区域</button></div>
+    </div>
+</body>
+</html>

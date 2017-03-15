@@ -447,6 +447,7 @@ body {
 .border-text {
   clear: both;
   width: 70%;
+  max-width: 300px;
   margin: 0 auto;
   margin-top: 15px;
   border: 1px solid #eee;
@@ -489,4 +490,43 @@ body {
 .tab .btn:active {
   color: #019875;
   background-color: #fff;
+}
+.text-center {
+  text-align: center;
+}
+.border-p {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  height: 100px;
+  line-height: 100px;
+}
+.priceform {
+  text-align: left;
+  width: 80%;
+}
+.priceform select {
+  width: 20%;
+  font-size: 1rem;
+  padding: 5px 2%;
+  background-color: #fff;
+  border: none;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.right-container > p {
+  color: #666;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+.form label {
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+}
+.form .input-w45 {
+  width: 45%;
 }

@@ -7,7 +7,7 @@ $(document).ready(function(){
             navscoll();
             //tab();
             calnav();
-            buy_ajax();
+            //buy_ajax();
         }
          
         //采购管理供应商信息
